@@ -15,3 +15,11 @@ let customers = [
     purchases: ["Monitor"]
   }
 ];
+
+customers.push({
+  name: "Mary Davis",
+  email: "marydavis@email.com",
+  purchases: ["Smart Watch", "Headphones"]
+});
+
+customers.shift(); // Removes the first element in an array
