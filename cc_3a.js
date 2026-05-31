@@ -23,3 +23,13 @@ customers.push({
 });
 
 customers.shift(); // Removes the first element in an array
+
+customers[0].email = "sarah.doe@newemail.com";
+customers[0].purchases.push("Wireless Charger");
+
+customers.forEach(function(customer) {
+  console.log(`Customer Name: ${customer.name}`);
+  console.log(`Email: ${customer.email}`);
+  console.log(`Total Purchases: ${customer.purchases.length}`);
+  console.log(""); // spacer
+});
